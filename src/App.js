@@ -11,22 +11,17 @@ export default function App() {
     {
       id: nanoid(),
       text: "This is my first note!",
-      date: "03-01-2022",
+      date: "03-01-2023",
     },
     {
       id: nanoid(),
       text: "This is my second note!",
-      date: "13-01-2022",
+      date: "13-12-2022",
     },
     {
       id: nanoid(),
       text: "This is my third note!",
-      date: "23-01-2022",
-    },
-    {
-      id: nanoid(),
-      text: "This is my third note!",
-      date: "05-02-2022",
+      date: "23-12-2022",
     }
   ])
 
