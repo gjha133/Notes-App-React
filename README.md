@@ -1,3 +1,14 @@
+# Notes App
+
+### This Notes App project has been created using React.Js and it stores all your data locally on your browser.
+
+## Features:
+
+###-> Create and Delete notes
+###-> Toggle between Dark and Light modes
+###-> Search for a note using keyword
+###-> More features on the way!
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
