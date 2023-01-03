@@ -2,7 +2,7 @@ import { MdDeleteForever } from "react-icons/md"
 
 export default function Note({id, text, date, handleDeleteNote, darkMode}) {
     return (
-        <div className="note">
+        <div className={`note${darkMode ? "dark" : ""}`}>
         {/*<div className={`note${darkMode ? "dark" : ""}`}>  */}
             <span>{text}</span>
             <div className="note-footer">

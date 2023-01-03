@@ -1,9 +1,7 @@
 body {
   margin: 0;
   padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   scroll-behavior: smooth;
@@ -44,9 +42,7 @@ code {
 .search input {
   border: none;
   background-color: rgba(237, 237, 237, 0.548);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-      sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 .search input:focus {
@@ -57,18 +53,34 @@ code {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1rem;
-  
 }
 
-.note {
-    box-shadow: 1px 1px 1px 1px #888888;
-}
-
-
-
-.note.new {
+.newNote {
   background-color: #FDFDBD;
   box-shadow: 1px 1px 1px 1px #888888c8;
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.newNotedark {
+  color: white;
+  background-color: #A27B5C;  
+  /* background-color: #B8E8FC; */
+  box-shadow: 1px 1px 1px 1px #a27b5ca6;
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+  word-break: break-all;
 }
 
 /* .note-new dark-mode {
@@ -79,19 +91,32 @@ textarea {
   border: none;
   resize: none;
   background-color: #FDFDBD;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-  'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-  sans-serif;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* .text-area dark-mode {
-  background-color: blue;
-} */
+.textareadark {
+  color: white;
+  background-color: #A27B5C;
+  border: none;
+  resize: none;
+  /* background-color: #B8E8FC; */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
 
 textarea:focus {
   outline: none;
   white-space: pre-wrap;
   overflow-wrap: break-word;
+}
+
+.textareadark:focus {
+  outline: none;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+
+.textareadark::placeholder {
+  color: white;
 }
 
 .save1 {
@@ -136,7 +161,21 @@ textarea:focus {
 
 .note {
   background-color: #B6E2A1;
-  /* margin-bottom: 10px; */
+  box-shadow: 1px 1px 1px 1px #888888;
+  border-radius: 10px;
+  padding: 1rem;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+  word-break: break-all;
+}
+
+.notedark {
+  color: white;
+  background-color: #0f3660;
+  box-shadow: 1px 1px 1px 1px #354259cf;
   border-radius: 10px;
   padding: 1rem;
   min-height: 170px;

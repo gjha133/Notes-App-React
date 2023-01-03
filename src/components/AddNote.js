@@ -18,18 +18,18 @@ export default function AddNote({ handleAddNote, darkMode }) {
     }
 
     return (
-        <div className="note new">
+        <div className={`newNote${darkMode ? "dark" : ""}`}>
             <textarea
                 rows='8'
                 cols='10'
                 placeholder="Type to add a note..."
                 value={noteText}
                 onChange={handleChange}
-                // className={`text-area ${darkMode && 'dark-mode'}`}
+                className={`textarea${darkMode ? "dark" : ""}`}
             >
             </textarea>
             <div className="note-footer">
-                <small>{characterLimit - noteText.length} characters remaining</small>
+                <small className="char-limit">{characterLimit - noteText.length} characters remaining</small>
                 <button className="save1" onClick={handleSaveClick}>Save</button>
             </div>
         </div>
