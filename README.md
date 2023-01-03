@@ -4,10 +4,10 @@
 
 ## Features:
 
-###-> Create and Delete notes
-###-> Toggle between Dark and Light modes
-###-> Search for a note using keyword
-###-> More features on the way!
+### -> Create and Delete notes
+### -> Toggle between Dark and Light modes
+### -> Search for a note using keyword
+### -> More features on the way!
 
 # Getting Started with Create React App
 
